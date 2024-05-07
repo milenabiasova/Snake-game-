@@ -32,6 +32,7 @@ Game Over Logic: Implementing the logic for the game to end when the snake hits 
 Implementing the sound: I finished with implementing the eating sound to my game.
 
 What I Learned
+
 Technical Skills:
 JavaScript: Deepened understanding of arrays, objects, functions, collision.
 CSS: Learned about complex positioning and styling to create a responsive design.
@@ -52,7 +53,11 @@ Creating a user-friendly interface that was both functional and aesthetically pl
 Creating my own pixel image for the game was fun.
 
 Game Code Overview
+
 Key Functions:
+
 move(): Controls the snake's movement and updates its position.
+
 draw(): Renders the snake and food on the game board.
+
 checkCollision(): Checks for collisions with the game boundaries or the snake itself
