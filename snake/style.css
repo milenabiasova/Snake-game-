@@ -1,0 +1,147 @@
+body {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'VT323', monospace;
+    background-color: #fac4e6;
+}
+
+.snake {
+    background-color: #ff7b7b;
+}
+#game-board{
+    border-radius: 100px;
+    display: grid;
+    grid-template-columns: repeat(20,20px);
+    grid-template-rows: repeat(20,20px);
+    margin: 5px;
+}
+
+.game-border-1{
+    border: #b4014c solid 10px;
+    border-radius: 30px;
+    box-shadow: inset 0 0 0 10px #b4014c;
+}
+.game-border-2{
+    border: #da246f solid 8px;
+    border-radius: 26px;
+    box-shadow: inset 0 0 0 10px #da246f;
+}
+.game-border-3{
+    border: #fc9abc solid 30px;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 5px #fc9abc;
+}
+
+#instruction-text {
+    position: absolute;
+    top: 64%;
+    color: #da246f;
+    width: 300px;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 30px;
+    margin: 0;
+}
+
+.scores {
+    display: flex;
+    justify-content: space-between;
+}
+
+#score {
+    color: #b4014c;
+}
+#score,
+#highScore {
+    font-size: 40px;
+    font-weight: bolder;
+    margin: 10px 0;
+}
+
+#highScore {
+    color: #ff2983;
+    display: none;
+}
+
+
+.game-border-3, #logo {
+    background-color: #fac4e6;
+}
+.snake{
+    border: #ff8fe1 1px dotted;
+}
+
+.food {
+    background-color: #0000cc;
+    border: #acace8 5px solid;
+}
+
+#logo {
+    position: absolute;
+    width: 40%;
+    max-width: 240px;
+    height: auto;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #ffbdd3;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid #98005e;
+    width: 50%;
+    color: #560036;
+    font-size: 18px;
+    text-align: center;
+}
+
+.closeBtn {
+    color: #98005e;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.closeBtn:hover,
+.closeBtn:focus {
+    color: #2c001d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#helpBtn {
+    background-color: #fc9abc;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    font-family: 'VT323', monospace;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border: 3px solid #b4014c;
+    border-radius: 7px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+#helpBtn:hover {
+    background-color: #b4014c;
+    border: 3px solid #fc9abc;
+
+}

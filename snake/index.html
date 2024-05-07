@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width,
+initial-scale=1.0"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Josefin+Sans:wght@300&family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <title>Snake Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div>
+    <div class=" scores">
+        <h1 id="score">000</h1>
+        <h1 id="highScore">000</h1>
+    </div>
+    <div class="game-border-1">
+        <div class="game-border-2">
+            <div class="game-border-3">
+                <div id="game-board">
+                </div>
+            </div>
+        </div>
+    </div>
+    <button id="helpBtn">How to Play</button>
+
+    <!-- Modal for How to Play -->
+    <div id="helpModal" class="modal">
+        <div class="modal-content">
+            <span class="closeBtn">&times;</span>
+            <h2>How to Play</h2>
+            <p>Use the arrow keys to move the snake.</p>
+            <p>Eat food to grow longer, but don't run into the walls or yourself!</p>
+            <p>Try to achieve the highest score possible.</p>
+        </div>
+    </div>
+</div>
+<h1 id="instruction-text"> Press spacebar to start the Game</h1>
+<img id='logo' src="/images/snake3.png" alt="snake-logo">
+</body>
+</html>
